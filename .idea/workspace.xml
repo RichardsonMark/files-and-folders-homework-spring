@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="78604693-83dd-4b2a-b247-491d83b5e092" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/repositories/UserRespository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/codeclan/filefolderservice/FilefolderserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/codeclan/filefolderservice/FilefolderserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/filefolderservice_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/filefolderservice_db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/filefolderservice_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/filefolderservice_db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/models/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/models/Folder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codeclan/filefolderservice/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/components/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/FolderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/FolderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/models/Folder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/models/Folder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/codeclan/filefolderservice/models/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.FilefolderserviceApplicationTests.canAddNewUserFileAndFolder">
+  <component name="RunManager" selected="Application.FilefolderserviceApplication">
     <configuration name="FilefolderserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.codeclan.filefolderservice.FilefolderserviceApplication" />
       <module name="filefolderservice" />
@@ -105,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FilefolderserviceApplicationTests.canAddNewUserFileAndFolder" />
         <item itemvalue="Application.FilefolderserviceApplication" />
+        <item itemvalue="JUnit.FilefolderserviceApplicationTests.canAddNewUserFileAndFolder" />
         <item itemvalue="JUnit.FilefolderserviceApplicationTests.canAddFolder" />
         <item itemvalue="JUnit.FilefolderserviceApplicationTests.canAddUser" />
       </list>
@@ -124,21 +132,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1200" height="221" key="GridCell.Tab.0.bottom" timestamp="1612900400321">
+    <state x="-785" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1612902306282">
       <screen x="-1920" y="-115" width="1920" height="1057" />
     </state>
-    <state width="1200" height="221" key="GridCell.Tab.0.bottom/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612900400321" />
-    <state width="1200" height="221" key="GridCell.Tab.0.center" timestamp="1612900400320">
+    <state x="-785" y="26" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612902306282" />
+    <state width="1144" height="221" key="GridCell.Tab.0.bottom" timestamp="1612905520889">
       <screen x="-1920" y="-115" width="1920" height="1057" />
     </state>
-    <state width="1200" height="221" key="GridCell.Tab.0.center/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612900400320" />
-    <state width="1200" height="221" key="GridCell.Tab.0.left" timestamp="1612900400319">
+    <state width="1144" height="221" key="GridCell.Tab.0.bottom/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612905520889" />
+    <state width="1144" height="221" key="GridCell.Tab.0.center" timestamp="1612905520888">
       <screen x="-1920" y="-115" width="1920" height="1057" />
     </state>
-    <state width="1200" height="221" key="GridCell.Tab.0.left/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612900400319" />
-    <state width="1200" height="221" key="GridCell.Tab.0.right" timestamp="1612900400320">
+    <state width="1144" height="221" key="GridCell.Tab.0.center/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612905520888" />
+    <state width="1144" height="221" key="GridCell.Tab.0.left" timestamp="1612905520885">
       <screen x="-1920" y="-115" width="1920" height="1057" />
     </state>
-    <state width="1200" height="221" key="GridCell.Tab.0.right/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612900400320" />
+    <state width="1144" height="221" key="GridCell.Tab.0.left/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612905520885" />
+    <state width="1144" height="221" key="GridCell.Tab.0.right" timestamp="1612905520889">
+      <screen x="-1920" y="-115" width="1920" height="1057" />
+    </state>
+    <state width="1144" height="221" key="GridCell.Tab.0.right/0.23.1280.733/-1920.-115.1920.1057@-1920.-115.1920.1057" timestamp="1612905520889" />
   </component>
 </project>

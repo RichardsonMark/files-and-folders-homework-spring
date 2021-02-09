@@ -1,6 +1,7 @@
 package com.example.codeclan.filefolderservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -10,13 +11,13 @@ import java.util.List;
 @Table(name = "users")
 public class User {
 
-    @Column(name = "name")
-    private String name;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "name")
+    private String name;
 
-    @JsonIgnore
+    @JsonIgnoreProperties({"user"})
     @OneToMany(mappedBy = "user")
     private List<Folder> folders;
 
