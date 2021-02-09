@@ -1,4 +1,40 @@
 package com.example.codeclan.filefolderservice.controllers;
 
+import com.example.codeclan.filefolderservice.models.File;
+import com.example.codeclan.filefolderservice.models.Folder;
+import com.example.codeclan.filefolderservice.models.User;
+import com.example.codeclan.filefolderservice.repositories.FileRepository;
+import com.example.codeclan.filefolderservice.repositories.FolderRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
+import java.util.Optional;
+
 public class FolderController {
+
+    @Autowired
+    FolderRepository folderRepository;
+
+    @GetMapping(value ="/folders")
+    public ResponseEntity<List<Folder>> getAllFolders() {
+        List<Folder> allFolders = folderRepository.findAll();
+        return new ResponseEntity<>(allFolders, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/folders/{id}")
+    public ResponseEntity<Optional<Folder>> getFolder(@PathVariable Long id){
+        return new ResponseEntity<>(folderRepository.findById(id), HttpStatus.OK);
+    }
+
+    @PostMapping("/folders")
+    public ResponseEntity<Folder> createFolder(@RequestBody Folder folder) {
+        folderRepository.save(folder);
+        return new ResponseEntity<>(folder, HttpStatus.CREATED);
+    }
 }
